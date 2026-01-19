@@ -370,6 +370,98 @@
             font-weight: bold;
         }
 
+        /* Education Section */
+        .education-timeline {
+            max-width: 900px;
+            margin: 0 auto 3rem auto;
+        }
+
+        .education-card {
+            background: white;
+            padding: 2.5rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            margin-bottom: 2rem;
+            border-left: 4px solid var(--secondary);
+            transition: all 0.3s;
+        }
+
+        .education-card:hover {
+            transform: translateX(10px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .education-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: start;
+            flex-wrap: wrap;
+        }
+
+        .education-header h3 {
+            color: var(--primary);
+            font-size: 1.6rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .education-header .institution {
+            color: var(--dark);
+            font-size: 1.1rem;
+            font-weight: 600;
+            margin-bottom: 0.3rem;
+        }
+
+        .education-header .location {
+            color: var(--gray);
+            font-size: 1rem;
+        }
+
+        .education-header .date {
+            color: var(--gray);
+            font-style: italic;
+            white-space: nowrap;
+        }
+
+        .certifications {
+            margin-top: 4rem;
+        }
+
+        .cert-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .cert-badge {
+            background: white;
+            padding: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+            text-align: center;
+            transition: all 0.3s;
+            border: 2px solid transparent;
+        }
+
+        .cert-badge:hover {
+            border-color: var(--secondary);
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.15);
+        }
+
+        .cert-badge span {
+            font-size: 3rem;
+            display: block;
+            margin-bottom: 1rem;
+        }
+
+        .cert-badge p {
+            color: var(--dark);
+            font-weight: 600;
+            margin: 0;
+        }
+
         /* Projects Section */
         .projects-grid {
             display: grid;
@@ -510,6 +602,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#skills">Skills</a></li>
                 <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -637,6 +730,57 @@
                     <li>Drove 25% improvement in organic traffic by implementing data-informed SEO/SEM strategies and integrating advanced tracking systems using Google Tag Manager for comprehensive user journey analysis</li>
                     <li>Created detailed product documentation, technical specifications, and API requirements bridging business objectives with engineering implementation to ensure alignment and successful delivery</li>
                 </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Education Section -->
+    <section id="education">
+        <div class="container">
+            <h2 class="section-title">Education</h2>
+            <div class="education-timeline">
+                <div class="education-card">
+                    <div class="education-header">
+                        <div>
+                            <h3>Master of Arts, International Management</h3>
+                            <p class="institution">IU International University of Applied Sciences</p>
+                            <p class="location">Berlin, Germany</p>
+                        </div>
+                        <span class="date">April 2023 – August 2025</span>
+                    </div>
+                </div>
+                <div class="education-card">
+                    <div class="education-header">
+                        <div>
+                            <h3>Bachelor of Business Administration</h3>
+                            <p class="institution">New Delhi Institute of Management</p>
+                            <p class="location">New Delhi, India</p>
+                        </div>
+                        <span class="date">August 2019 – June 2022</span>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="certifications">
+                <h3 style="text-align: center; color: var(--primary); margin: 3rem 0 2rem 0; font-size: 1.8rem;">Certifications</h3>
+                <div class="cert-grid">
+                    <div class="cert-badge">
+                        <span>📊</span>
+                        <p>Business Intelligence & Analytics</p>
+                    </div>
+                    <div class="cert-badge">
+                        <span>📈</span>
+                        <p>Business Analysis & Process Management</p>
+                    </div>
+                    <div class="cert-badge">
+                        <span>🎯</span>
+                        <p>Google Ads for Beginners</p>
+                    </div>
+                    <div class="cert-badge">
+                        <span>📑</span>
+                        <p>Microsoft Excel Advanced</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
